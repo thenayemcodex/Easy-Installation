@@ -63,6 +63,7 @@ The easiest way to install Kivy is with pip, which installs Kivy using either a 
 		
 		
 	def setup(self):
+		self.console(self.title)
 		self.console("\nUse root password for update your system")
 		commandprompt('sudo apt-get update && apt-get dist-upgrade -y')
 		self.console('\nyour system has been upgraded succesfully')
